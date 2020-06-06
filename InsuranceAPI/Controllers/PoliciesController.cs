@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using InsuranceAPI.Models;
 using System.Data;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +13,7 @@ namespace InsuranceAPI.Controllers
 {
     [Route("api/v{version}")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class PoliciesController : ControllerBase
     {
         /// <summary>
@@ -45,7 +47,7 @@ namespace InsuranceAPI.Controllers
         /// Get the list of policies linked to a user name
         /// </summary>
         /// <param name="name">User Name</param>
-        /// <example></example>
+        /// <example>https://localhost:44305/api/v1/policiesbyname/Britney</example>
         /// <returns>Json list of values</returns>
         [HttpGet("policiesbyname/{name}")]
         public async Task<string> GetByName(string name)
