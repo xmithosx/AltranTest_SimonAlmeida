@@ -1,7 +1,9 @@
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\testhost.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\nunit.engine.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\testhost.exe
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Test.InsuranceAPI.deps.json
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Test.InsuranceAPI.runtimeconfig.json
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Test.InsuranceAPI.runtimeconfig.dev.json
@@ -16,7 +18,6 @@ X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\testhost.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\Test.InsuranceAPI\bin\Debug\netcoreapp3.1\nunit.framework.dll
