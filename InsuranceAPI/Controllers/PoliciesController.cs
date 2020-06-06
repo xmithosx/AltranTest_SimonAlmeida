@@ -13,7 +13,7 @@ namespace InsuranceAPI.Controllers
 {
     [Route("api/v{version}")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles = "admin")]
     public class PoliciesController : ControllerBase
     {
         /// <summary>
