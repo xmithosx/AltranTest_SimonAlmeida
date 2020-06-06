@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using InsuranceAPI.Models;
 using System.Data;
+using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,13 +23,21 @@ namespace InsuranceAPI.Controllers
         [HttpGet("policiesbyid/{id}")]
         public async Task<string> GetById(string id)
         {
-            var tp = AltranDatos.GetPolicies();
-            await Task.WhenAll(tp);
+            //TODO: Autorization
+            var data = new LPolizas().Policies;
+            try
+            {
+                var t1 = AltranDatos.GetPolicies();
+                await Task.WhenAll(t1);
 
-            var rawData = await tp;
+                var rawData = await t1;
 
-            var data = rawData.Policies.Where(x => x.Id == id);
-
+                data = rawData.Policies.Where(x => x.Id == id);
+            }
+            catch (Exception ex)
+            {
+                //TODO: Log Exeption
+            }
             return JsonConvert.SerializeObject(data);
         }
 
@@ -41,13 +50,25 @@ namespace InsuranceAPI.Controllers
         [HttpGet("policiesbyname/{name}")]
         public async Task<string> GetByName(string name)
         {
-            var tp = AltranDatos.GetPolicies();
-            await Task.WhenAll(tp);
+            //TODO: Autorization
+            var data = new LPolizas().Policies;
+            try
+            {
+                var t0 = AltranDatos.GetClients();
+                var t1 = AltranDatos.GetPolicies();
+                
+                await Task.WhenAll(t0, t1);
+                
+                var rawData0 = await t0;
+                var rawData = await t1;
 
-            var rawData = await tp;
-
-            var data = rawData.Policies;//.Where(x => x.Name == name);
-
+                string _cliendId = rawData0.Clients.Where(x => x.Name == name).SingleOrDefault().Id;
+                data = rawData.Policies.Where(x => x.ClientId == _cliendId);
+            }
+            catch (Exception ex)
+            {
+                //TODO: Log Exeption
+            }
             return JsonConvert.SerializeObject(data);
         }
 
