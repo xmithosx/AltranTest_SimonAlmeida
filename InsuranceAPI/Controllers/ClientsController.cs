@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using InsuranceAPI.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +13,7 @@ namespace InsuranceAPI.Controllers
 {
     [Route("api/v{version}")]
     [ApiController]
+    [Authorize]
     public class ClientsController : ControllerBase
     {
         /// <summary>
