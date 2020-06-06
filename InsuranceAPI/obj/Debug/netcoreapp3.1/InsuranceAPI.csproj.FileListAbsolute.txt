@@ -1,3 +1,8 @@
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.AssemblyInfoInputs.cache
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.AssemblyInfo.cs
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.csproj.CoreCompileInputs.cache
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.MvcApplicationPartsAssemblyInfo.cs
+X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.MvcApplicationPartsAssemblyInfo.cache
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\appsettings.json
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -12,11 +17,6 @@ X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\Newt
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.AssemblyInfoInputs.cache
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.AssemblyInfo.cs
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.csproj.CoreCompileInputs.cache
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.MvcApplicationPartsAssemblyInfo.cs
-X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.MvcApplicationPartsAssemblyInfo.cache
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.RazorTargetAssemblyInfo.cache
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\InsuranceAPI.csproj.CopyComplete
 X:\XMITHOSX\0Prueba\AltranTest\GitRepo\InsuranceAPI\obj\Debug\netcoreapp3.1\staticwebassets\InsuranceAPI.StaticWebAssets.Manifest.cache
