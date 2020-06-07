@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using InsuranceAPI.Models;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
+using NLog.Fluent;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -38,7 +39,7 @@ namespace InsuranceAPI.Controllers
             }
             catch (Exception ex)
             {
-                //TODO: Log Exeption
+                Log.Error().Exception(ex);
             }
             return JsonConvert.SerializeObject(data);
         }
@@ -64,7 +65,7 @@ namespace InsuranceAPI.Controllers
             }
             catch (Exception ex)
             {
-                //TODO: Log Exeption
+                Log.Error().Exception(ex);
             }
             return JsonConvert.SerializeObject(data);
         }
