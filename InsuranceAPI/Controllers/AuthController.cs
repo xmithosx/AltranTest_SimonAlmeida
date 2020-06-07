@@ -50,9 +50,16 @@ namespace InsuranceAPI.Controllers
                 var rawData = await t1;
 
                 data = rawData.Clients.Where(x => x.Email == mail).SingleOrDefault();
-                dataAuth.email = data.Email;
-                dataAuth.role = data.Role;
-                dataAuth.validuntil = DateTime.Now.AddHours(8);
+                if (data != null)
+                {
+                    dataAuth.email = data.Email;
+                    dataAuth.role = data.Role;
+                    dataAuth.validuntil = DateTime.Now.AddHours(8);
+                }
+                else
+                {
+                    throw new ArgumentNullException("Usuario no Conseguido");
+                }
             }
             catch (Exception ex)
             {

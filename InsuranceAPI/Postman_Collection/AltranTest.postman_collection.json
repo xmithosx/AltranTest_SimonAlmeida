@@ -13,9 +13,9 @@
 					"script": {
 						"id": "2154face-2776-4e6a-81ad-e0b9c590c73f",
 						"exec": [
-							"//Guardameo el Tojen en la variable de colección para que sea utilizado por todas las otras llamadas\r",
+							"//Save the Token in Collection Variable for being used un the other requests\r",
 							"pm.collectionVariables.set('BTokenJWT', pm.response.text())\r",
-							"//pm.collectionVariables.get('BTokenJWT')"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -49,7 +49,7 @@
 					"script": {
 						"id": "5e45d139-3b20-4676-aa5d-2b828cdee761",
 						"exec": [
-							"//pm.collectionVariables.get('BTokenJWT')"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -218,7 +218,7 @@
 	],
 	"variable": [
 		{
-			"id": "68303104-fa47-4b78-9660-be95536c156e",
+			"id": "bee7bb3f-dae0-4cf0-be0b-359fd311ffff",
 			"key": "BTokenJWT",
 			"value": "",
 			"type": "string"
