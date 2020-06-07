@@ -9,13 +9,13 @@ namespace InsuranceApi.Test_MSTest
     public class ClientsTest
     {
         [TestMethod]
-        public void GetClients_GetingElement()
+        public void GetClients_GetingCorrectAmountOfElement()
         {
-            GetClients_GetingElementAsync().Wait();
+            GetClients_GetingCorrectAmountOfElementAsync().Wait();
         }
 
         [TestMethod]
-        public async Task GetClients_GetingElementAsync()
+        public async Task GetClients_GetingCorrectAmountOfElementAsync()
         {
             //Arrange
             int expected = 194;
@@ -31,13 +31,7 @@ namespace InsuranceApi.Test_MSTest
             //string actual2 = data.ElementAt.ID;
 
             //Assert
-            Assert.Equals(expected, actual);
-        }
-
-        [TestMethod]
-        public void SimpleTest()
-        {
-            Assert.Equals(1, 1);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
