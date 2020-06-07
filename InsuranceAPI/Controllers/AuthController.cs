@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 using InsuranceAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using NLog.Fluent;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,6 +20,16 @@ namespace InsuranceAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly ILogger<AuthController> logger;
+        private readonly IConfiguration configuration;
+
+        public AuthController(ILogger<AuthController> logger, IConfiguration configuration)
+        {
+            this.logger = logger;
+            this.configuration = configuration;
+        }
+
+
         /// <summary>
         /// Autenticación por email - omitido Password por data manejada
         /// </summary>
@@ -27,6 +39,7 @@ namespace InsuranceAPI.Controllers
         [HttpGet("authbymail/{mail}")]
         public async Task<string> GetAuth(string mail)
         {
+            Log.Info().Message("AuthConroller Begin");
             var data = new Cliente();
             var dataAuth = new AuthData();
             try
@@ -43,17 +56,13 @@ namespace InsuranceAPI.Controllers
             }
             catch (Exception ex)
             {
-                //TODO: Log Exeption
+                Log.Error().Exception(ex);
+                Log.Error().Message(ex.StackTrace);
             }
             
             return GenerarTokenJWT(dataAuth);
         }
 
-        private readonly IConfiguration configuration;
-        public AuthController(IConfiguration configuration)
-        {
-            this.configuration = configuration;
-        }
         private string GenerarTokenJWT(AuthData usuarioInfo)
         {
             // HEADER //
