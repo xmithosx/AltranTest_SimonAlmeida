@@ -13,5 +13,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Postman_Collection\AltranTest.postman_collection.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>

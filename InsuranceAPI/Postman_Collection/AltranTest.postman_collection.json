@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "8a673266-8004-4b70-b5c4-67ee0ef2f789",
+		"name": "AltranTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorize",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2154face-2776-4e6a-81ad-e0b9c590c73f",
+						"exec": [
+							"//Guardameo el Tojen en la variable de colección para que sea utilizado por todas las otras llamadas\r",
+							"pm.collectionVariables.set('BTokenJWT', pm.response.text())\r",
+							"//pm.collectionVariables.get('BTokenJWT')"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/authbymail/britneyblankenship%40quotezart.com",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"authbymail",
+						"britneyblankenship%40quotezart.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clients By Name",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5e45d139-3b20-4676-aa5d-2b828cdee761",
+						"exec": [
+							"//pm.collectionVariables.get('BTokenJWT')"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BTokenJWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/clientsbyname/Britney",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"clientsbyname",
+						"Britney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clients By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BTokenJWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/clientsbyid/a0ece5db-cd14-4f21-812f-966633e7be86",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"clientsbyid",
+						"a0ece5db-cd14-4f21-812f-966633e7be86"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policies By Name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BTokenJWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/policiesbyname/Britney",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"policiesbyname",
+						"Britney"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Policies By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "86eaf3ed-792c-4f86-8dc8-fbff8927a02b",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BTokenJWT}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/v1/policiesbyid/64cceef9-3a01-49ae-a23b-3761b604800b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"v1",
+						"policiesbyid",
+						"64cceef9-3a01-49ae-a23b-3761b604800b"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "696c10bf-ce49-433a-a6e1-bbc819725ded",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "59b6aabf-a405-4500-8ac3-6caf3333be36",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "68303104-fa47-4b78-9660-be95536c156e",
+			"key": "BTokenJWT",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
