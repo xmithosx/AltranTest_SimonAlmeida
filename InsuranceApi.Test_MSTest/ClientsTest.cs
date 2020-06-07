@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using InsuranceAPI;
-using Xunit;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace InsuranceAPI.Test
+namespace InsuranceApi.Test_MSTest
 {
+    [TestClass]
     public class ClientsTest
     {
-        [Fact]
+        [TestMethod]
         public void GetClients_GetingElement()
         {
             GetClients_GetingElementAsync().Wait();
         }
 
-        [Fact]
+        [TestMethod]
         public async Task GetClients_GetingElementAsync()
         {
             //Arrange
@@ -33,13 +31,13 @@ namespace InsuranceAPI.Test
             //string actual2 = data.ElementAt.ID;
 
             //Assert
-            Assert.Equal(expected, actual);
+            Assert.Equals(expected, actual);
         }
 
-        [Fact]
+        [TestMethod]
         public void SimpleTest()
         {
-            Assert.Equal(1, 1);
+            Assert.Equals(1, 1);
         }
     }
 }

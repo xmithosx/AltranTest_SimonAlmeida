@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI.Test\\InsuranceAPI.Test.csproj": {}
+    "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceApi.Test_MSTest\\InsuranceApi.Test_MSTest.csproj": {}
   },
   "projects": {
-    "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI.Test\\InsuranceAPI.Test.csproj": {
+    "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceApi.Test_MSTest\\InsuranceApi.Test_MSTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI.Test\\InsuranceAPI.Test.csproj",
-        "projectName": "InsuranceAPI.Test",
-        "projectPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI.Test\\InsuranceAPI.Test.csproj",
+        "projectUniqueName": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceApi.Test_MSTest\\InsuranceApi.Test_MSTest.csproj",
+        "projectName": "InsuranceApi.Test_MSTest",
+        "projectPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceApi.Test_MSTest\\InsuranceApi.Test_MSTest.csproj",
         "packagesPath": "C:\\Users\\xmith\\.nuget\\packages\\",
-        "outputPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI.Test\\obj\\",
+        "outputPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceApi.Test_MSTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj": {
-                "projectPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj"
+              "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj": {
+                "projectPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj"
               }
             }
           }
@@ -45,53 +45,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "xunit": {
+            "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.1.0, )"
             },
-            "xunit.abstractions": {
+            "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[2.1.0, )"
             },
-            "xunit.analyzers": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[0.10.0, )"
+              "version": "[16.5.0, )"
             },
-            "xunit.assert": {
+            "coverlet.collector": {
               "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.core": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.extensibility.execution": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.console": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.utility": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.2, )"
-            },
-            "xunit.runners": {
-              "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -122,14 +90,14 @@
         }
       }
     },
-    "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj": {
+    "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj",
         "projectName": "InsuranceAPI",
-        "projectPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj",
         "packagesPath": "C:\\Users\\xmith\\.nuget\\packages\\",
-        "outputPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\obj\\",
+        "outputPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

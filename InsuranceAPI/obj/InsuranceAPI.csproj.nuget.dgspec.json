@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj": {}
+    "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj": {}
   },
   "projects": {
-    "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj": {
+    "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj",
         "projectName": "InsuranceAPI",
-        "projectPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\InsuranceAPI.csproj",
         "packagesPath": "C:\\Users\\xmith\\.nuget\\packages\\",
-        "outputPath": "X:\\XMITHOSX\\0Prueba\\AltranTest\\GitRepo\\InsuranceAPI\\obj\\",
+        "outputPath": "C:\\Users\\xmith\\Source\\Repos\\xmithosx\\AltranTestSimonAlmeida\\InsuranceAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\xmith\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
